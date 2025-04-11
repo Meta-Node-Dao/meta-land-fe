@@ -1,0 +1,1 @@
+import{T as o}from"./TextLogo.be8c481d.js";import{l as e,bm as t}from"./bundle.f4813fa2.js";const r={theme:{type:String,default:"colorful"},withText:{type:Boolean,default:!1},height:{type:Number,default:40}},n=e({name:"ULogo",props:r,setup(p){return()=>t(o,null,null)}});export{n as U};

@@ -1,0 +1,1 @@
+import{l as r,bm as s}from"./bundle.f4813fa2.js";const i=r({name:"RegisterLayout",setup(o,a){return()=>{var e,t;return s("div",{class:"bg-purple h-full min-h-screen text-[14px] relative"},[s("div",{class:"u-page-container"},[(t=(e=a.slots).default)==null?void 0:t.call(e)])])}}});export{i as R};

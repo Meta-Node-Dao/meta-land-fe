@@ -1,0 +1,1 @@
+import{cz as t}from"./bundle.f4813fa2.js";const o="2ELu077yKddrWgBs68EgqeW73rt",r="b31c14879618d557cf903a4353f147e3",a=()=>t({host:"ipfs.infura.io",port:5001,protocol:"https",headers:{authorization:"Basic "+btoa(o+":"+r)}});export{a as g};

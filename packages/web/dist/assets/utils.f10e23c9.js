@@ -1,0 +1,1 @@
+var D=(E=>(E[E.UPCOMING=0]="UPCOMING",E[E.LIVE=1]="LIVE",E[E.CANCELED=2]="CANCELED",E[E.ENDED=3]="ENDED",E))(D||{});export{D as S};

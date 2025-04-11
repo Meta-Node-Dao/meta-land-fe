@@ -1,0 +1,1 @@
+import{cs as n}from"./bundle.f4813fa2.js";const u=t=>{const s=n.utc(Number(t.apply_deadline)).unix()<=n().utcOffset(0).unix();return(t.applicants&&!t.applicants.length||!isNaN(Number(t.applicant_count))&&t.applicant_count<1)&&s?4:t.status||0};export{u as g};

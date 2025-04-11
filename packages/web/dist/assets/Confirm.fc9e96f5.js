@@ -1,0 +1,1 @@
+import{bD as e,bf as o,bg as t}from"./bundle.f4813fa2.js";const r={width:"25",height:"24",viewBox:"0 0 25 24",fill:"none"},n=t("path",{d:"M5.18652 12L10.2713 17L20.4408 7",stroke:"currentColor","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round"},null,-1),s=[n];function d(c,i){return e(),o("svg",r,s)}export{d as r};

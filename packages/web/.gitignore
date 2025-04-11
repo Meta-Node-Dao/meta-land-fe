@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+dist-ssr
+*.local
+.a2s.js
+src/contracts/index.ts
