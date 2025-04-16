@@ -13,10 +13,12 @@ import { BountyInfo, chainInfoType } from './typing'
 import { getBuyCoinAddress, getMainTokenDecimal } from '@/blocks/FairLaunchpad/utils'
 import Steps from '@/components/Step'
 import {
-  useBountyFactoryContract,
   useErc20Contract,
-  BountyFactoryAddresses as bountyFactoryAddresses
 } from '@/contracts'
+import{
+  useBountyFactoryContract,
+  BountyFactoryAddresses as bountyFactoryAddresses
+} from '@/contracts/dev'
 import { services } from '@/services'
 import { useWalletStore } from '@/stores'
 import { useContractStore } from '@/stores/contract'

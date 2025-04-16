@@ -10,10 +10,12 @@ import { CrowdfundingInfo } from './typing'
 import Steps, { StepProps } from '@/components/Step'
 import { allNetworks } from '@/constants'
 import {
-  CrowdfundingFactoryAddresses,
-  useCrowdfundingFactoryContract,
   useErc20Contract
 } from '@/contracts'
+import {
+  CrowdfundingFactoryAddresses,
+  useCrowdfundingFactoryContract,
+} from '@/contracts/dev'
 import { services } from '@/services'
 import { useWalletStore } from '@/stores'
 import { useContractStore } from '@/stores/contract'

@@ -11,7 +11,7 @@ import {
 import { NTooltip } from 'naive-ui'
 import { defineComponent, PropType, reactive, computed, ref, CSSProperties, h } from 'vue'
 import { STARTUP_TYPES, supportedNetworks, STARTUP_TYPES_DESCRIPTION } from '@/constants'
-import { useStartupContract } from '@/contracts'
+import { useStartupContract } from '@/contracts/dev'
 import { useTags } from '@/hooks'
 import { services } from '@/services'
 import { useWalletStore } from '@/stores'
