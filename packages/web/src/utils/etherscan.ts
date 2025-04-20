@@ -19,6 +19,8 @@ function getEndpintUrl() {
     case 'Goerli':
       return 'https://api-goerli.etherscan.io/'
     // 'Mainnet':
+    case 'sepolia':
+      return 'https://api-sepolia.etherscan.io/'
     default:
       return 'https://api.etherscan.io/'
   }

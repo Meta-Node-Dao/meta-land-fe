@@ -70,4 +70,3 @@ pnpm build
 4. git push
 5. create PR
 
-[For more details link](https://fe.dev.comunion.io/zh/)

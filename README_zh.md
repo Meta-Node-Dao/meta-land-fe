@@ -68,4 +68,4 @@ pnpm build:prod
 4. git push 推送代码
 5. 从你的代码库提交一个 PR
 
-[更多细节请参照](https://fe.dev.comunion.io/zh/)
+
