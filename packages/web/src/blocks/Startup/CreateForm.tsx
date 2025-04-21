@@ -111,14 +111,15 @@ const CreateStartupForm = defineComponent({
               const res1 = await startupContract.createStartup(
                 [
                   model.name,
-                  // model.type ? model.type : 0,
+                  model.type ? model.type : 0,
                   // model.tags,
+                  model.mission,
                   // model.logo,
-                  model.chain_id || 0,
-                  // model.mission,
+                  //model.chain_id || 0,
+                  model.mission,
                   // model.tokenContract,
                   // model.composes.map(item => [item.name, item.address]),
-                  // model.overview,
+                  model.overview,
                   true
                 ],
                 'The fields of network and name will be registered to blockchain.',

@@ -6,7 +6,7 @@ import { useWalletStore } from '@/stores'
 export const StartupAddresses: Record<number, string> = {
   5700: '0x108E699ca5570D13C89FeE551Aa86D3ADde1FedF',
   57000: '0xc6Bc996320c16cB59f73410ab42eE1C589A0F70A',
-  11155111: '0xA7806431c8ce39381Df44C2Fb385218585F3e3Aa'
+  11155111: '0xf72f6D2D9eDb3d938d4B28157DFa4175bD4b78F8'
 }
 
 const abi =
@@ -17,7 +17,7 @@ export function useStartupContract(
 ): {
   getContract: () => Contract
   createStartup: (
-    p: [name: string, chainId: number | BigNumber, used: any],
+    p: [name: string, type: number | BigNumber, logo: string, mission: string, overview: string, used: any],
     pendingText: string,
     waitingText: string,
     overrides?: any
