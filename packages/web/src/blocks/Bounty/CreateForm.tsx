@@ -12,10 +12,8 @@ import PayDetailStage, { PayDetailStageRef } from './components/PayDetailStage'
 import { BountyInfo, chainInfoType } from './typing'
 import { getBuyCoinAddress, getMainTokenDecimal } from '@/blocks/FairLaunchpad/utils'
 import Steps from '@/components/Step'
+import { useErc20Contract } from '@/contracts'
 import {
-  useErc20Contract,
-} from '@/contracts'
-import{
   useBountyFactoryContract,
   BountyFactoryAddresses as bountyFactoryAddresses
 } from '@/contracts/dev'

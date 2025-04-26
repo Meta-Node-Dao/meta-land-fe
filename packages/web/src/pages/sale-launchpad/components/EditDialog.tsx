@@ -11,7 +11,7 @@ import {
 import { BigNumber } from 'ethers'
 import { defineComponent, PropType, computed, Ref, ref, watch, h } from 'vue'
 import RichEditor from '@/components/Editor'
-import { useWESaleContract } from '@/contracts'
+import { useWESaleContract } from '@/contracts/saleLaunchpadDev'
 import { ServiceReturn, services } from '@/services'
 import { useWalletStore } from '@/stores'
 

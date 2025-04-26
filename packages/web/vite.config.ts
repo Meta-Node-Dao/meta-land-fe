@@ -25,8 +25,8 @@ export default defineConfig({
     host: '0.0.0.0',
     port: process.env.PORT ? +process.env.PORT : 9001,
     proxy: {
-      // '/api': 'https://d.gorollux.com'
-      '/api': 'http://localhost:9101'
+      '/api': 'http://120.76.159.136:9101'
+      // '/api': 'http://localhost:9101'
     }
   },
   define: {

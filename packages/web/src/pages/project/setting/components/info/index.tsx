@@ -9,6 +9,7 @@ import {
   useUpload,
   message
 } from '@comunion/components'
+import { NTooltip } from 'naive-ui'
 import { CustomRequest } from 'naive-ui/lib/upload/src/interface'
 import { defineComponent, ref, reactive, PropType, watch, h } from 'vue'
 import { RectDraggerUpload } from '@/components/Upload'
@@ -24,7 +25,6 @@ import {
 import { useStartupContract } from '@/contracts'
 import { useWalletStore } from '@/stores'
 import { useContractStore } from '@/stores/contract'
-import { NTooltip } from 'naive-ui'
 
 type InfoPropType = {
   logo: string
@@ -326,6 +326,7 @@ export default defineComponent({
           const startupContract = useStartupContract()
           if (this.info.switchChain && !this.data.on_chain) {
             const res = await startupContract.createStartup(
+              //@ts-ignore
               [this.info.name, this.info.chain_id || 0, true],
               'The fields of network and name will be registered to blockchain.',
               `Project "${this.info.name}" was created`
@@ -369,7 +370,7 @@ export default defineComponent({
 
     const rules = getFieldsRules(this.fields)
     return (
-      <USpin show={this.loading}>
+      <USpin v-show={this.loading as boolean}>
         <div class="bg-white border rounded-sm mb-6 min-h-100 p-10 relative overflow-hidden">
           <div class="flex mb-14">
             <RectDraggerUpload

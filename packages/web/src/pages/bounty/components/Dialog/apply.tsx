@@ -16,7 +16,7 @@ import { defineComponent, Ref, computed, h, ref, reactive, watch, inject, Comput
 import { useRoute } from 'vue-router'
 import { useBountyContractWrapper } from '../../hooks/useBountyContractWrapper'
 import { MAX_AMOUNT, renderUnit } from '@/blocks/Bounty/components/BasicInfo'
-import { BountyFactoryAddresses } from '@/contracts'
+// import { BountyFactoryAddresses } from '@/contracts'
 import { services } from '@/services'
 import { useWalletStore, useUserStore } from '@/stores'
 import { useContractStore } from '@/stores/contract'
@@ -204,7 +204,7 @@ const ApplyDialog = defineComponent({
               this.formData.deposit.toString(),
               this.bountyDetail?.deposit_contract_token_decimal
             )
-            console.log('applyFor deposit', this.formData.deposit, BountyFactoryAddresses)
+            // console.log('applyFor deposit', this.formData.deposit, BountyFactoryAddresses)
             let res2
             if (
               this.bountyDetail?.deposit_contract_address !==

@@ -106,6 +106,24 @@ const CreateStartupForm = defineComponent({
           if (!data || data.is_exist) {
             return message.error('Project name already exists')
           }
+          console.log(
+            [
+              model.name,
+              model.type ? model.type : 0,
+              // model.tags,
+              model.mission,
+              // model.logo,
+              //model.chain_id || 0,
+              model.mission,
+              // model.tokenContract,
+              // model.composes.map(item => [item.name, item.address]),
+              model.overview,
+              true
+            ],
+            'params---createStartup',
+            startupContract
+          )
+
           try {
             if (model.switch) {
               const res1 = await startupContract.createStartup(
